@@ -1,0 +1,11 @@
+<div class="input-group mb-3">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Search for country..."
+    aria-describedby="button-addon2"
+    #inputSearch
+    (input)="onInputSearchCountry()"
+    [(ngModel)]="searchedText"
+  />
+</div>

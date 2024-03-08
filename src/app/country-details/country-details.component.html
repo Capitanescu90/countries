@@ -1,0 +1,30 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="img-wrap">
+        <img
+          [src]="countryObject.flags.png"
+          [alt]="countryObject.flags.alt"
+          [title]="countryObject.flags.alt"
+        />
+      </div>
+      <div class="country-atribute">
+        <strong>Country name:</strong> {{ countryObject.altSpellings[3] }}
+      </div>
+      <div class="country-atribute">
+        <strong>Shorthand name:</strong> {{ countryObject.altSpellings[0] }}
+      </div>
+      <div class="country-atribute">
+        <strong>Capital name:</strong> {{ countryObject.capital }}
+      </div>
+
+      <div class="country-atribute">
+        <strong>Timezone:</strong> {{ countryObject.timezones }}
+      </div>
+      <div class="country-atribute">
+        <strong>Population:</strong> {{ countryObject.population }}
+      </div>
+    </div>
+    <div class="col-md-6"></div>
+  </div>
+</div>

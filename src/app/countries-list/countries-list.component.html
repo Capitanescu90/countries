@@ -1,0 +1,12 @@
+<div class="row mt-5">
+  <ng-container *ngFor="let country of countriesList">
+    <div
+      class="col-md-3 col-sm-6 mb-5"
+      *ngIf="
+        selectedCountry === '' ||
+        country.name.common.toLowerCase().includes(selectedCountry)
+      "
+    >
+      <app-country-card [country]="country"></app-country-card></div
+  ></ng-container>
+</div>

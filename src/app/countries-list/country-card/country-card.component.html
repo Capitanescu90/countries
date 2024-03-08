@@ -1,0 +1,15 @@
+<div class="card country-card" style="width: 18rem">
+  <img [src]="country.flags.png" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">{{ country.name.common }}</h5>
+    <p class="card-text"><strong>Capital:</strong> {{ country.capital }}</p>
+    <p class="card-text">
+      Some quick information about the
+      <strong>{{ country.name.common }}</strong> country. Click on the button
+      info below to see all the details.
+    </p>
+    <button (click)="countryDetails(country)" class="btn btn-primary">
+      More about {{ country.name.common }}
+    </button>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<app-searchbar
+  (searchedCountryEvent)="onSearchedInput($event)"
+  class="mt-5"
+></app-searchbar>
+<app-countries-list
+  [selectedCountry]="searchedInput"
+  class="mt-5"
+></app-countries-list>
